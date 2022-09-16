@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #00AAFF, #02ad58);
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  display: grid;
+  height: 450px;
+  width: 300px;
+  min-height: 80vh;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.screen {
+  display: flex;
+  height: 100px;
+  width: 280px;
+  margin: 5px 8px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 50px;
+  background-color: white;
+  color: #000;
+}
+
+button {
+  height: 55px;
+  width: 55px;
+  border: 1px solid black;
+  background-color: #607d8b;
+  border-radius: 3px;
+  font-size: 26px;
+}
+
+button:hover {
+  background-color: #8eacbb;
+}
+
+.operator {
+  background-color: #34515e;
+}
+
+.operator:hover {
+  background-color: #8eacbb;
+}
+
+.all-clear {
+  background-color: #34515e;
+}
+
+.all-clear:hover {
+  background-color: #8eacbb;
+}
+
+.equal {
+  background-color: #34515e;
+  height: 100%;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.equal:hover {
+  background-color: #8eacbb;
+}
+
+.calculator-keys {
+  display: grid;
+  justify-content: center;
+  margin: 10px 10px;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  row-gap: 10px;
+  grid-column-gap: 20px;
+}
